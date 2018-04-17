@@ -7,12 +7,12 @@ class FishTest < MiniTest::Test
 
 
   def setup
-    @fish = Fish.new("Simon")
+    @fish_1 = Fish.new("Simon")
   end
 
 def test_has_name
-  assert_equal("Simon", fish.name())
-
+  assert_equal("Simon", @fish_1.name())
+end
 
 
 end
