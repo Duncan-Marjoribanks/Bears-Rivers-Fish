@@ -6,8 +6,15 @@ class Bear
     @stomach = []
   end
 
-def take_fish_from_river(bear, river)
-
+def add_fish_to_stomach(fish)
+  @stomach.push(fish)
 end
+
+# def take_fish_from_river(bear, river)
+# transferring_fish = []
+# transferring_fish.push(river[0])
+# river.remove_one_fish()
+# bear.
+# end
 
 end

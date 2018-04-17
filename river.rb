@@ -11,7 +11,7 @@ class River
     return @fish_population.count()
   end
 
-  def remove_one_fish(fish)
+  def remove_one_fish
     return @fish_population.pop
   end
 
