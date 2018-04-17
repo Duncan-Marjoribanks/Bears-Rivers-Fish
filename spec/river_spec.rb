@@ -7,7 +7,7 @@ class RiverTest < MiniTest::Test
 
 
   def setup
-    @river_1 = River.new("Amazon", 20)
+    @river_1 = River.new("Amazon", ["fish_1", "fish_2"])
   end
 
   def test_has_name
