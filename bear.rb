@@ -1,10 +1,14 @@
 class Bear
-attr_reader(:name, :stomach)
+  attr_accessor(:name, :stomach)
 
-def initialize(name, stomach)
-  @name = name
-  @stomach = []
-end
+  def initialize(name, stomach)
+    @name = name
+    @stomach = []
+  end
+
+  # def stomach
+  #   return stomach
+  # end
 
 
 end
