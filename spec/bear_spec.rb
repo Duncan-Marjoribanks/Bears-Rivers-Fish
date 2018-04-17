@@ -4,9 +4,7 @@ require_relative("../bear")
 require_relative("../river")
 require_relative("../fish")
 
-
 class BearTest < MiniTest::Test
-
 
   def setup
     @fish_1 = Fish.new("Farah")
@@ -24,20 +22,23 @@ class BearTest < MiniTest::Test
     assert_equal(0, @bear_1.stomach.count)
   end
 
-def test_can_add_fish_to_stomach
-  @bear_1.add_fish_to_stomach(@fish_3)
-  assert_equal(1, @bear_1.stomach.count)
-end
+  def test_fish_in_stomach
+    assert_equal(0, @bear_1.stomach.count)
+  end
 
-def test_take_fish_from_river
-  @bear_1.take_fish_from_river(@bear_1, @river_1)
-  assert_equal(1, @bear_1.stomach.count)
-  assert_equal(1, @river_1.fish_count)
-end
+  def test_can_add_fish_to_stomach
+    @bear_1.add_fish_to_stomach(@fish_3)
+    assert_equal(1, @bear_1.stomach.count)
+  end
 
-def test_bear_can_roar
-  assert_equal("Roar!", @bear_1.roar)
-end
+  def test_take_fish_from_river
+    @bear_1.take_fish_from_river(@bear_1, @river_1)
+    assert_equal(1, @bear_1.stomach.count)
+    assert_equal(1, @river_1.fish_count)
+  end
 
+  def test_bear_can_roar
+    assert_equal("Roar!", @bear_1.roar)
+  end
 
 end

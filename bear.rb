@@ -11,14 +11,15 @@ class Bear
   end
 
   def take_fish_from_river(bear, river)
-    fish_holding_pen = Array.new
-    fish_holding_pen.push(river.fish_population[0])
-    river.remove_one_fish
-    bear.add_fish_to_stomach(fish_holding_pen)
+    # fish_holding_pen = Array.new
+    # fish_holding_pen.push(river.fish_population[0])
+    # river.remove_one_fish
+    # bear.add_fish_to_stomach(fish_holding_pen)
+    @stomach.push(river.fish_population.pop)
   end
 
-def roar
-  return "Roar!"
-end
+  def roar
+    return "Roar!"
+  end
 
 end

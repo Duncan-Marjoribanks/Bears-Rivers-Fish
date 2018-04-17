@@ -1,4 +1,5 @@
 class River
+
   attr_reader(:name, :fish_population)
   attr_writer(:fish_population)
 
@@ -14,8 +15,5 @@ class River
   def remove_one_fish
     return @fish_population.shift
   end
-
-
-
 
 end
