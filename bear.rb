@@ -6,9 +6,8 @@ class Bear
     @stomach = []
   end
 
-  # def stomach
-  #   return stomach
-  # end
+def take_fish_from_river(bear, river)
 
+end
 
 end
