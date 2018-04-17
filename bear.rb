@@ -17,4 +17,8 @@ class Bear
     bear.add_fish_to_stomach(fish_holding_pen)
   end
 
+def roar
+  return "Roar!"
+end
+
 end

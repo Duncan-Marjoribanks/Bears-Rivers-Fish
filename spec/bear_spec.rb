@@ -35,5 +35,9 @@ def test_take_fish_from_river
   assert_equal(1, @river_1.fish_count)
 end
 
+def test_bear_can_roar
+  assert_equal("Roar!", @bear_1.roar)
+end
+
 
 end
