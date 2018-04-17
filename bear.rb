@@ -3,18 +3,18 @@ class Bear
 
   def initialize(name, stomach)
     @name = name
-    @stomach = []
+    @stomach = Array.new
   end
 
-def add_fish_to_stomach(fish)
-  @stomach.push(fish)
-end
+  def add_fish_to_stomach(fish)
+    @stomach.push(fish)
+  end
 
-# def take_fish_from_river(bear, river)
-# transferring_fish = []
-# transferring_fish.push(river[0])
-# river.remove_one_fish()
-# bear.
-# end
+  def take_fish_from_river(bear, river)
+    fish_holding_pen = Array.new
+    fish_holding_pen.push(river.fish_population[0])
+    river.remove_one_fish
+    bear.add_fish_to_stomach(fish_holding_pen)
+  end
 
 end

@@ -12,7 +12,7 @@ class River
   end
 
   def remove_one_fish
-    return @fish_population.pop
+    return @fish_population.shift
   end
 
 

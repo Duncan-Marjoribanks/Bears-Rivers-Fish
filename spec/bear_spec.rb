@@ -29,10 +29,11 @@ def test_can_add_fish_to_stomach
   assert_equal(1, @bear_1.stomach.count)
 end
 
-# def test_take_fish_from_river
-#   assert_equal(1, @bear_1.stomach.count)
-#   assert_equal(1, @river_1.fish_count)
-# end
+def test_take_fish_from_river
+  @bear_1.take_fish_from_river(@bear_1, @river_1)
+  assert_equal(1, @bear_1.stomach.count)
+  assert_equal(1, @river_1.fish_count)
+end
 
 
 end
